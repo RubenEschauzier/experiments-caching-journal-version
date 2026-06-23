@@ -4,7 +4,7 @@
     "https://linkedsoftwaredependencies.org/bundles/npm/@jbr-experiment/solid-session-bench/^6.0.0/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@jbr-hook/sparql-endpoint-comunica/^6.0.0/components/context.jsonld"
   ],
-  "@id": "urn:jbr:experiments-caching-journal-version:combination_0",
+  "@id": "urn:jbr:experiments-caching-journal-version:combination_1",
   "@type": "ExperimentSolidSessionBench",
   "scale": "0.1",
   "configEnhance": "input/config-enhancer.json",
@@ -29,14 +29,14 @@
   "queryRunnerEndpointAvailabilityCheckTimeout": 1000,
   "queryRunnerUrlParams": { "context": "{ \"lenient\": true }" },
   "hookSparqlEndpoint": {
-    "@id": "urn:jbr:experiments-caching-journal-version:combination_0:hookSparqlEndpoint",
+    "@id": "urn:jbr:experiments-caching-journal-version:combination_1:hookSparqlEndpoint",
     "@type": "HookSparqlEndpointComunica",
     "dockerfileClient": "input/dockerfiles/Dockerfile-client-caching",
     "resourceConstraints": {
       "@type": "StaticDockerResourceConstraints",
       "cpu_percentage": 100
     },
-    "configClient": "input/configs-client/config-solid-indexed-cache/config-solid-indexed-cache-small.json",
+    "configClient": "input/configs-client/config-solid-indexed-cache/config-solid-indexed-cache-medium.json",
     "contextClient": "input/context-client.json",
     "additionalBinds": [],
     "clientPort": 3001,
