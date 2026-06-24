@@ -36,7 +36,7 @@
       "@type": "StaticDockerResourceConstraints",
       "cpu_percentage": 100
     },
-    "configClient": "input/configs-client/config-solid-indexed-cache-quad-store/config-solid-query-source-state-cache-quad-store-%FACTOR-size%.json",
+    "configClient": "input/configs-client/config-solid-indexed-cache-quad-store/config-solid-cache-quad-store-%FACTOR-size%.json",
     "contextClient": "input/context-client.json",
     "additionalBinds": [],
     "clientPort": 3001,
