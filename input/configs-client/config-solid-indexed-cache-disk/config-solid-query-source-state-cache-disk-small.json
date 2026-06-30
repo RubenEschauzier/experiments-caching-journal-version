@@ -18,7 +18,9 @@
     "ccqslt:config/context-preprocess/actor-set-cache-manager.json",
     
     "ccqslt:config/optimize-query-operation/set-indexed-cache-get-view.json",
-    "ccqslt:config/query-source-dereference-link/actors-indexed-cache-disk.json"
+    "ccqslt:config/query-source-dereference-link/actors-indexed-cache-disk.json",
+
+    "ccqslt:config/http/actors-delay.json"
   ],
   "@graph": [
     {
@@ -29,7 +31,7 @@
           "@id": "urn:comunica:default:optimize-query-operation/actors#set-cache-indexed-disk-offline-traversal",
           "@type": "ActorOptimizeQueryOperationSetCacheIndexedDiskOfflineTraversal",
           "cacheSizeDiskNumTriples": 2500000,
-          "cacheSizeHotNumTriples": 50000,
+          "cacheSizeHotNumTriples": 25000,
           "hotCachePolicy": "lru-filtered",
           "beforeActors": [
             { "@id": "urn:comunica:default:optimize-query-operation/actors#initialize-link-traversal-manager" }

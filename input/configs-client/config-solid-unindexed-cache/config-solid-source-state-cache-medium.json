@@ -15,7 +15,9 @@
     "ccqslt:config/extract-links/actors/solid-type-index-noinference.json",
 
     "ccqslt:config/context-preprocess/actor-set-cache-manager.json",
-    "ccqslt:config/query-source-dereference-link/actors-unindexed-source.json"
+    "ccqslt:config/query-source-dereference-link/actors-unindexed-source.json",
+
+    "ccqslt:config/http/actors-delay.json"
   ],
   "@graph": [
     {
