@@ -36,7 +36,7 @@
       "@type": "StaticDockerResourceConstraints",
       "cpu_percentage": 100
     },
-    "configClient": "input/configs-client/config-solid-indexed-cache-track-topology/config-solid-indexed-cache-%FACTOR-size%.json",
+    "configClient": "input/configs-client/config-client-default-track-topology%FACTOR-size%.json",
     "contextClient": "input/context-client.json",
     "additionalBinds": [
       "/output-topology-tracking:/tmp/traversal-data/"
