@@ -23,7 +23,7 @@
     "@type": "StaticDockerResourceConstraints",
     "cpu_percentage": 100
   },
-  "queryRunnerReplication": 10,
+  "queryRunnerReplication": 5,
   "queryRunnerWarmupRounds": 0,
   "queryRunnerRequestDelay": 100,
   "queryRunnerEndpointAvailabilityCheckTimeout": 1000,
@@ -36,9 +36,11 @@
       "@type": "StaticDockerResourceConstraints",
       "cpu_percentage": 100
     },
-    "configClient": "input/configs-client/config-solid-indexed-cache-quad-store-estimate-offline-traversal/config-solid-cache-quad-store-offline-traversal-estimate-%FACTOR-size%.json",
+    "configClient": "input/configs-client/config-solid-indexed-cache-track-topology/config-solid-indexed-cache-%FACTOR-size%.json",
     "contextClient": "input/context-client.json",
-    "additionalBinds": [],
+    "additionalBinds": [
+      "/output-topology-tracking:/tmp/traversal-data/"
+    ],
     "clientPort": 3001,
     "clientLogLevel": "error",
     "queryTimeout": 180,

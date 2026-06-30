@@ -8,3 +8,6 @@
 !/combinations/*/generated/.keep
 /combinations/*/output/*
 !/combinations/*/output/.keep
+
+/output-topology-tracking/*
+!/output-topology-tracking/.keep
