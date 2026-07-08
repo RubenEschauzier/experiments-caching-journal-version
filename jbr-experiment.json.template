@@ -36,7 +36,7 @@
       "@type": "StaticDockerResourceConstraints",
       "cpu_percentage": 100
     },
-    "configClient": "input/configs-client/config-unindexed-cache-synth/config-solid-source-state-cache-%FACTOR-miss%.json",
+    "configClient": "input/configs-client/config-indexed-cache-synth/config-solid-indexed-cache-%FACTOR-miss%.json",
     "contextClient": "input/context-client.json",
     "additionalBinds": [],
     "clientPort": 3001,
