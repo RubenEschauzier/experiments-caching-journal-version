@@ -5,7 +5,11 @@
     "@jbr-experiment/solid-session-bench": "^6.1.0",
     "@jbr-hook/sparql-endpoint-comunica": "^6.0.0",
     "cross-env": "^7.0.3",
-    "jbr": "^6.0.0"
+    "jbr": "^6.0.0",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.15"
   },
   "scripts": {
     "jbr": "cross-env NODE_OPTIONS=--max-old-space-size=8192 jbr",

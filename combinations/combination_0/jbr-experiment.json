@@ -36,7 +36,7 @@
       "@type": "StaticDockerResourceConstraints",
       "cpu_percentage": 100
     },
-    "configClient": "input/configs-client/config-solid-indexed-cache-disk-estimate-offline-traversal/config-solid-query-source-state-cache-disk-offline-traversal-estimate-small.json",
+    "configClient": "input/configs-client/config-unindexed-cache-synth/config-solid-source-state-cache-0.json",
     "contextClient": "input/context-client.json",
     "additionalBinds": [],
     "clientPort": 3001,

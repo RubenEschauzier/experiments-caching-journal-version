@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/config-query-sparql/^5.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/config-query-sparql-link-traversal/^0.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/runner/^5.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-optimize-query-operation-set-cache-indexed-quad-store-offline-traversal/^0.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-optimize-query-operation-set-cache-indexed-get-view/^0.0.0/components/context.jsonld"
+
+  ],
+  "import": [
+    "ccqslt:config/config-solid-base-no-identify.json",
+    "ccqslt:config/extract-links/actors/predicates-common.json",
+    "ccqslt:config/extract-links/actors/predicates-ldp.json",
+    "ccqslt:config/extract-links/actors/links-describedby.json",
+    "ccqslt:config/extract-links/actors/predicates-solidstorage.json",
+    "ccqslt:config/extract-links/actors/quad-pattern-query.json",
+    "ccqslt:config/extract-links/actors/solid-type-index-noinference.json",
+
+    "ccqslt:config/query-source-identify/actors-query-cache.json",
+    "ccqslt:config/context-preprocess/actor-set-cache-manager.json",
+    
+    "ccqslt:config/query-source-dereference-link/actors-indexed-cache-quad-store.json",
+
+    "ccqslt:config/http/actors-delay.json"
+  ],
+  "@graph": [
+    {
+      "@id": "urn:comunica:default:Runner",
+      "@type": "Runner",
+      "actors": [
+        {
+          "@id": "urn:comunica:default:optimize-query-operation/actors#set-cache-indexed-quad-store-offline-traversal",
+          "@type": "ActorOptimizeQueryOperationSetCacheIndexedQuadStoreOfflineTraversal",
+          "cacheSizeNumTriples": 2000000,
+          "beforeActors": [
+            { "@id": "urn:comunica:default:optimize-query-operation/actors#initialize-link-traversal-manager" }
+          ]
+        },
+        {
+          "@id": "urn:comunica:default:optimize-query-operation/actors#set-cache-indexed-get-view",
+          "@type": "ActorOptimizeQueryOperationSetCacheIndexedGetView",
+          "mediatorQuerySourceIdentifyHypermedia": { "@id": "urn:comunica:default:query-source-identify-hypermedia/mediators#main" },
+          "actorExtractLinksQuadPatternQuery": { "@id": "urn:comunica:default:extract-links/actors#quad-pattern-query" },
+          "probabilityCacheMiss": 0.3,
+          "beforeActors": [
+            { "@id": "urn:comunica:default:optimize-query-operation/actors#initialize-link-traversal-manager" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -36,7 +36,7 @@
       "@type": "StaticDockerResourceConstraints",
       "cpu_percentage": 100
     },
-    "configClient": "input/configs-client/config-solid-indexed-cache-quad-store-estimate-offline-traversal/config-solid-cache-quad-store-offline-traversal-estimate-%FACTOR-size%.json",
+    "configClient": "input/configs-client/config-unindexed-cache-synth/config-solid-source-state-cache-%FACTOR-miss%.json",
     "contextClient": "input/context-client.json",
     "additionalBinds": [],
     "clientPort": 3001,
