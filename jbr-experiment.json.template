@@ -36,7 +36,7 @@
       "@type": "StaticDockerResourceConstraints",
       "cpu_percentage": 100
     },
-    "configClient": "input/configs-client/config-disk-cache-synth/config-solid-cache-disk-%FACTOR-miss%.json",
+    "configClient": "input/configs-client/config-store-cache-synth/config-solid-cache-quad-store-%FACTOR-miss%.json",
     "contextClient": "input/context-client.json",
     "additionalBinds": [],
     "clientPort": 3001,
