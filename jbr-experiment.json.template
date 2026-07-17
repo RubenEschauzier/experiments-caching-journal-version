@@ -23,7 +23,7 @@
     "@type": "StaticDockerResourceConstraints",
     "cpu_percentage": 100
   },
-  "queryRunnerReplication": 10,
+  "queryRunnerReplication": 6,
   "queryRunnerWarmupRounds": 0,
   "queryRunnerRequestDelay": 100,
   "queryRunnerEndpointAvailabilityCheckTimeout": 1000,
