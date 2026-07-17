@@ -10,7 +10,7 @@
   },
   "overrides": {
     "sparql-benchmark-runner": {
-      ".": "npm:@rubeneschauzier/sparql-benchmark-runner@^5.1.1"
+      ".": "npm:@rubeneschauzier/sparql-benchmark-runner@^5.1.2"
     }
   },
   "devDependencies": {
