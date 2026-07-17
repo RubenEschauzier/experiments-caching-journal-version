@@ -8,6 +8,11 @@
     "jbr": "^6.0.0",
     "typescript": "^5.5.3"
   },
+  "overrides": {
+    "sparql-benchmark-runner": {
+      ".": "npm:@rubeneschauzier/sparql-benchmark-runner@^5.1.0"
+    }
+  },
   "devDependencies": {
     "@types/node": "^22.19.15"
   },
